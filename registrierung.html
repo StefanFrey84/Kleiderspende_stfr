@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StefanFrey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/Bilder/Logo.png" width="200" height="60" class="d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="registrierung.html">Registrierung</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Weitere Hilfsprojekte
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Unterstützung für arme Senioren</a></li>
+                  <li><a class="dropdown-item" href="#">Rettet die Tiere</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+          <div class="row my-4">
+            <h4>Wählen Sie eine Krisenregion aus, welche Ihre Kleidung erhalten soll:</h4>
+            <select class="form-select" aria-label="Default select example" style="width: auto;" id="lieferOrt">
+              <option selected value="beliebiger Ort">beliebiger Ort</option>
+              <option value="Jupiter-Land">Jupiter-Land</option>
+              <option value="Mars-Country">Mars-Country</option>
+              <option value="Mond-Village">Mond-Village</option>
+            </select>
+          </div>
+          <div class="row my-2">
+            <h4>Welche Art von Kleidung möchten Sie spenden?</h4>
+          </div>
+          <div class="row">
+            <div class="input-group mb-3" style="width: auto;">
+              <label class="input-group-text text-center" for="inputGroupSelect01" style="width: 200px">Hose</label>
+              <select class="form-select" id="hosen">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="mehr als 9">mehr als 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group mb-3" style="width: auto;">
+              <label class="input-group-text text-center" for="inputGroupSelect01" style="width: 200px">Pullover</label>
+              <select class="form-select" id="pullover">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="mehr als 9">mehr als 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group mb-3" style="width: auto;">
+              <label class="input-group-text text-center" for="inputGroupSelect01" style="width: 200px">Jacke</label>
+              <select class="form-select" id="jacken">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="mehr als 9">mehr als 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group mb-3" style="width: auto;">
+              <label class="input-group-text text-center" for="inputGroupSelect01" style="width: 200px">Schuhe</label>
+              <select class="form-select" id="schuhe">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="mehr als 9">mehr als 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"><strong>bei der Auswhal nicht das passende dabei oder Sie möchten etwas ergänzen, dann können Sie das gerne hier tun:</strong></label>
+              <textarea class="form-control" id="sonstigeKleidung" rows="3" style="max-width: 600px;"></textarea>
+            </div>
+          </div>
+          <!--Auswahl-Abholung-Abgabe-Anfang-->
+          <div class="row my-2">
+            <h4 id="ueberschrift1">Wählen Sie zwischen den beiden folgenden Optionen:</h4>
+          </div>
+          <div class="row my-2">
+            <div class="col">
+              <div class="form-check form-check-input">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="uebergabe" onclick="chooseBtn()">
+                <label class="form-check-label" for="flexRadioDefault1" style="width: max-content;">
+                  Übergabe an der Geschäftsstelle
+                </label>
+              </div>
+              <div class="form-check form-check-input">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="abholung" onclick="chooseBtn()">
+                <label class="form-check-label" for="flexRadioDefault2" style="width: max-content;">
+                  Abholung
+                </label>
+              </div>
+            </div>
+          </div> 
+        <!--Auswahl-Abholung-Abgabe-Ende-->
+        <!--Eingabeformular-Start-->
+         <form id="adresse" style="margin-top: 20px;">
+           <h4>Wählen Sie Ihren Wunschabholtermin aus:</h4>
+           <input id="input" width="312" style="margin-top: 20px;" />
+           <script>
+            $('#input').datetimepicker({ footer: true, modal: true });
+           </script>
+           <h6>Falls wir Ihren Termin nicht einhalten können oder Sie keinen Termin auswählen, <br> werden wir Sie kontaktieren um einen Termin gemeinsam zu vereinbaren</h6>
+           <h4 style="margin-top: 20px;">Bitte geben Sie nun ihre persönlichen Daten sowie die Abholadresse ein!</h4> 
+           <div class="row">
+              <div class="col-4 col-sm-3 col-md-2">
+                <label for="inputAnrede">Anrede</label>
+                <select id="inputAnrede" class="form-control">
+                  <option selected disabled>Choose...</option>
+                  <option>Herr</option>
+                  <option>Frau</option>
+                 </select>
+              </div>
+            </div>    
+           <div class="row">  
+              <div class="col-8 col-sm-6 col-md-4">
+                <label for="inputVorname">Vorname</label>
+                <input type="text" class="form-control" id="inputVorname">
+              </div>
+              <div class="col-8 col-sm-6 col-md-4">
+                <label for="inputNachname">Nachname</label>
+                <input type="text" class="form-control" id="inputNachname">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10 col-sm-8 col-md-6">
+                <label for="inputAddress">Straße</label>
+                <input type="text" class="form-control" id="inputStrasse">
+              </div>
+              <div class="col-4 col-sm-3 col-md-2">
+                <label for="inputAddress2">Hausnummer</label>
+                <input type="text" class="form-control" id="inputHausnummer">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5 col-sm-3 col-md-2">
+                <label for="inputPLZ">Postleitzahl</label>
+                <input type="text" class="form-control" id="inputPLZ">
+              </div>
+              <div class="col-10 col-sm-8 col-md-6">
+                <label for="inputCity">Stadt</label>
+                <input type="text" class="form-control" id="inputStadt">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 col-sm-6 col-md-4">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary my-2" onclick="fertigBtnAbholung()">Fertig</button>
+          </form>
+        <!--Eingabeformular-Ende-->  
+        <div class="row my-2" id="btnFertigAbgabe">
+          <div class="col">
+            <button class="btn btn-primary" type="button" onclick="fertigBtnAbgabe()" >Fertig</button>
+          </div>
+        </div> 
+        <h2 id="summary" style="color: red;"></h2>
+        
+    </div>
+    <footer class="text-center text-md-start text-dark bg-light" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col">
+                  <h5 class="text-uppercase">Wir bedanken uns bei Ihnen!</h5>
+                  <p>
+                    Wir Danken Ihnen herzlichst das Sie diese Seite besucht haben, 
+                    wenn wir noch etwas für Sie tun können, dann schreiben Sie uns doch gerne
+                    an. Unsere Mitarbieter kümmern sich um Sie.
+                  </p>
+                </div>
+                <div class="col">
+                  <h5 class="text-uppercase text-center">Links</h5>
+                   <ul class="list-unstyled mb-0 text-center">
+                    <li>
+                      <a href="faq.html" class="text-body">FAQ's</a>
+                    </li>
+                    <li>
+                      <a href="kontakt.html" class="text-body">Kontakt</a>
+                    </li>
+                    <li>
+                      <a href="rechtliches.html" class="text-body">AGB's</a>
+                    </li>
+                   </ul>
+                </div>
+            <div class="text-center p-3 text-light bg-dark link-light">
+              © 2024 Copyright:
+              <a class="link-light" href="zumLink.html">Stefan@Frey.com</a>
+            </div>
+        </div>    
+    </footer> 
+</body>
+</html>

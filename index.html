@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StefanFrey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/Bilder/Logo.png" width="200" height="60" class="d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="registrierung.html">Registrierung</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Weitere Hilfsprojekte
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Unterstützung für arme Senioren</a></li>
+                  <li><a class="dropdown-item" href="#">Rettet die Tiere</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid" id="contentbereich">
+        <div class="row" id="row1">
+            <div class="col-12 col-md-8 text-center align-self-center" id="col1">
+                <p class="fst-italic fs-3">
+                    Es gibt so viele arme Menschen die sich keine Kleidung mehr
+                    leisten können. Wir helfen diesen Menschen, indem wir die 
+                    von Ihnen bereitgestellte Kleidung sinnvoll weiterverteilen! 
+                    Egal was Sie haben, fast alles kann nochmal verwendet werden...
+                </p>
+            </div>
+            <div class="col-md-4" id="col2">
+                <img src="/Bilder/Altkleiderkontainer.jpg" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+        <div class="row mt-3 bg-dark text-light" id="row2">
+        <span class="fs-3">Wenn auch Sie helfen möchten, dann folgen Sie einfach den folgenden Schritten:</span>
+        </div>
+        <div class="row" id="row3">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Schritt 1: Wechseln zur Regeistrierung
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Begeben Sie Sich auf unsere <strong><a class="nav-link active" href="registrierung.html">Registrierung</a></strong> und wählen Sie ein Lieferland aus, dem Sie gerne mit Ihrer Kleiderspende helfen möchten!<br>Keine Sorge, Ihre Daten sind bei uns sicher!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Schritt 2: Auswähl der Kleidung
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Wählen Sie aus welche Art und Menge von Kleidung Sie spenden möchten!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Schritt 3: Abgabe oder Abholung
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Falls Sie sich bei der Regeistrierung dafür entscheiden die Ware selbst in eine unserer Filialen abzugeben, können Sie dies nun tun.<br>
+                  Ansonsten übergeben Sie die Ware einfach unseren Spedituer wenn er ei Ihnen klingelt. <strong>FERTIG!</strong>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>   
+    <footer class="text-center text-md-start text-dark bg-light" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                  <h5 class="text-uppercase">Wir bedanken uns bei Ihnen!</h5>
+                  <p>
+                    Wir Danken Ihnen herzlichst das Sie diese Seite besucht haben, 
+                    wenn wir noch etwas für Sie tun können, dann schreiben Sie uns doch gerne
+                    an. Unsere Mitarbieter kümmern sich um Sie.
+                  </p>
+                </div>
+                <div class="col">
+                  <h5 class="text-uppercase text-center">Links</h5>
+                   <ul class="list-unstyled mb-0 text-center">
+                    <li>
+                      <a href="faq.html" class="text-body">FAQ's</a>
+                    </li>
+                    <li>
+                      <a href="kontakt.html" class="text-body">Kontakt</a>
+                    </li>
+                    <li>
+                      <a href="rechtliches.html" class="text-body">AGB's</a>
+                    </li>
+                   </ul>
+                </div>
+            <div class="text-center p-3 text-light bg-dark link-light">
+              © 2024 Copyright:
+              <a class="link-light" href="zumLink.html">Stefan@Frey.com</a>
+            </div>
+        </div>   
+    </footer>  
+</body>
+</html>
